@@ -7,7 +7,7 @@
   --panel-light: #1e2231;
   --text: #f6f4f1;
   --muted: #a1a3b2;
-  --lime: #d8ff70;
+  --lime: var(--purple);
   --purple: #a59bff;
   --line: rgba(255, 255, 255, 0.11);
   --mono: "DM Mono", "Courier New", monospace;
@@ -90,7 +90,7 @@ a {
 .brand img {
   width: 38px;
   height: 38px;
-  border: 1px solid rgba(216, 255, 112, 0.52);
+  border: 1px solid rgba(165, 155, 255, 0.52);
   border-radius: 50%;
   object-fit: cover;
 }
@@ -161,7 +161,7 @@ a {
   margin: 0 8px 1px 0;
   border-radius: 50%;
   background: var(--lime);
-  box-shadow: 0 0 12px rgba(216, 255, 112, 0.85);
+  box-shadow: 0 0 12px rgba(165, 155, 255, 0.85);
 }
 
 h1,
@@ -253,7 +253,7 @@ p {
   width: min(32vw, 360px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: linear-gradient(140deg, rgba(165, 155, 255, 0.25), rgba(216, 255, 112, 0.08));
+  background: linear-gradient(140deg, rgba(165, 155, 255, 0.25), rgba(165, 155, 255, 0.08));
   content: "";
   filter: blur(2px);
 }
@@ -273,7 +273,7 @@ p {
   z-index: -1;
   width: 420px;
   height: 170px;
-  border: 1px solid rgba(216, 255, 112, 0.3);
+  border: 1px solid rgba(165, 155, 255, 0.3);
   border-radius: 50%;
   transform: rotate(-37deg);
 }
@@ -386,8 +386,8 @@ p {
 }
 
 .review-card-featured {
-  border-color: rgba(216, 255, 112, 0.35);
-  background: linear-gradient(145deg, rgba(216, 255, 112, 0.07), transparent 75%), var(--panel);
+  border-color: rgba(165, 155, 255, 0.35);
+  background: linear-gradient(145deg, rgba(165, 155, 255, 0.07), transparent 75%), var(--panel);
 }
 
 .stars {
@@ -507,7 +507,7 @@ p {
 }
 
 .mission-decoration span {
-  color: rgba(216, 255, 112, 0.04);
+  color: rgba(165, 155, 255, 0.04);
 }
 
 .about {
@@ -931,7 +931,7 @@ p {
 .channel-card:hover,
 .channel-card:focus-visible {
   transform: translateY(-3px);
-  border-color: rgba(216, 255, 112, 0.55);
+  border-color: rgba(165, 155, 255, 0.55);
 }
 
 .channel-card-art {
@@ -1036,7 +1036,7 @@ p {
 }
 
 .creator-about .about-image::before {
-  border-color: rgba(216, 255, 112, 0.45);
+  border-color: rgba(165, 155, 255, 0.45);
 }
 
 .creator-about .image-sticker {
@@ -1109,9 +1109,9 @@ p {
   width: 52px;
   height: 52px;
   place-items: center;
-  border: 1px solid rgba(216, 255, 112, 0.34);
+  border: 1px solid rgba(165, 155, 255, 0.34);
   border-radius: 10px;
-  background: rgba(216, 255, 112, 0.08);
+  background: rgba(165, 155, 255, 0.08);
   color: var(--lime);
   font-family: var(--mono);
   font-size: 13px;
@@ -1222,7 +1222,7 @@ p {
 .donate-option:hover,
 .donate-option:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(216, 255, 112, 0.5);
+  border-color: rgba(165, 155, 255, 0.5);
   background: var(--panel-light);
 }
 
@@ -1233,13 +1233,13 @@ p {
   flex: 0 0 auto;
   place-items: center;
   border-radius: 12px;
-  color: #102019;
+  color: var(--page);
   font-size: 24px;
   font-weight: 800;
 }
 
 .cash-app-icon {
-  background: #00d632;
+  background: var(--purple);
 }
 
 .kofi-icon {
@@ -1307,7 +1307,7 @@ p {
   position: absolute;
   top: 18px;
   right: 25px;
-  color: rgba(216, 255, 112, 0.55);
+  color: rgba(165, 155, 255, 0.55);
   font-size: 33px;
 }
 
